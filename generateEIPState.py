@@ -332,7 +332,7 @@ def StateError():
     with open('outputFBEIPState.txt', 'w') as f:
         for sis in pairedDict.keys():
 
-            print(f'fbF_{sis}_01_0.HW_Inputs.MCC[1].MccState := IO_1799_CARD_IN[{pairedDict[sis][10:]}].State')
+            f.write(f'fbF_{sis}_01_0.HW_Inputs.MCC[1].MccState := IO_1799_CARD_IN[{pairedDict[sis][10:]}].State\n')
 
     return
 
